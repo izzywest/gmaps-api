@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #map {
+            height: 15em;
+            width: 20em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var loc = {
+                lat: 48.1853943,
+                lng: 16.3044149
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: loc
+            });
+            var marker = new google.maps.Marker({
+                position: loc,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIa0jyNGOpSAm9vGHa3RIo3M62EyDFQbk&callback=initMap">
+    </script>
+</body>
+
+</html>
