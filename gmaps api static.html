@@ -8,10 +8,9 @@
             width: 20em;
         }
     </style>
-</head>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=INSERTKEYHERE&callback=initMap">
+    </script>
 
-<body>
-    <div id="map"></div>
     <script>
         function initMap() {
             var loc = {
@@ -28,8 +27,12 @@
             });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIa0jyNGOpSAm9vGHa3RIo3M62EyDFQbk&callback=initMap">
-    </script>
+</head>
+
+<body>
+    <div id="map"></div>
+
+
 </body>
 
 </html>
